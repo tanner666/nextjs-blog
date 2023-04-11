@@ -6,7 +6,7 @@ import { getSortedPostsData } from '../lib/posts';
 import Date from '../components/date';
 
 export async function getStaticProps(){
-  //fetches data from the file system
+  //fetches data from the file system t
   const allPostsData = getSortedPostsData();
   //passes the blog posts to the Home component as a prop
   return {
