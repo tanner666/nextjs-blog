@@ -16,7 +16,7 @@ export async function getStaticProps(){
   };
 }
 
-////access the blog posts and prerender them m
+////access the blog posts and prerender them
 export default function Home({allPostsData}) {
   return (
     <Layout home>
