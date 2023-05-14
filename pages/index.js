@@ -23,30 +23,15 @@ export default function Home({allPostsData}) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <div className="justify-center">
       <section className={utilStyles.headingMd}>
-        <p>
-          Hello, I'm <strong>Tanner</strong>. I'm a computer science student at NJIT looking to pursue a career in Software Engineering. You can contact me on {' '}
-          <a href="https://twitter.com">Twitter</a>.
+        <p >
+          <strong>Thank you for all that you do! Enjoy your new birdhouse and swing.</strong>
         </p>
-        <p>
-          (This is a sample blog page {' '}
-          <Link href="/posts/first-post">Blog</Link>.)
-        </p>
+       
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>{title}</Link>
-            <br />
-            <small className={utilStyles.lightText}>
-              <Date dateString={date} />
-            </small>
-          </li>
-          ))}
-        </ul>
-      </section>
+      </div>
+      
     </Layout>
   );
 }
