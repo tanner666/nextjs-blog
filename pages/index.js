@@ -31,6 +31,17 @@ export default function Home({allPostsData}) {
        
       </section>
       </div>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Attributes of Mom:</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+            <Link href={`/posts/${id}`}>{title}</Link>
+            <br />
+          </li>
+          ))}
+        </ul>
+      </section>
       
     </Layout>
   );
