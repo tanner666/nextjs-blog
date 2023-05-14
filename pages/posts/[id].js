@@ -26,14 +26,14 @@ export default function Post({ postData }) {
         <article>
             <h1 className={utilStyles.headingXl}>{postData.title}</h1>
             <div className={utilStyles.lightText}>
-            <Date dateString={postData.date} />
+            
             </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
       </Layout>
     );
   }
-
+//<Date dateString={postData.date} />
 // Fetch necessary data for the blog post using params.id
 export async function getStaticProps({ params }) {
     // Add the "await" keyword like this:
